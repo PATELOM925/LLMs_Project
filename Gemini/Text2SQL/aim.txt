@@ -1,0 +1,26 @@
+Aim : to create Text to SQL application 
+
+How will it work ?
+prompt --> LLM --> gemini --> querry --> our sql database --> get response
+1. User types in a query on the text editor of the app.
+2. The Language Modeling Module (LLM) takes this input and breaks down into meaningful
+sentences or phrases using NLP techniques like tokenization, POS tagging etc.
+3. Gemini module is responsible for understanding what each sentence means by applying semantic parsing algorithms.
+3. Gemini module is responsible for understanding what each sentence means by mapping these sentences to predefined
+3. Gemini module is responsible for understanding what each sentence means from the context provided by LLM
+4. Once understood, Gemini passes these sentences to Query Generation module which generates an appropriate SQL query
+4. Once understood, Gemini passes these sentences/phrases one at a time to Query Generation
+module(querry). This module generates an appropriate SQL query based on the given inputs.
+5. Our SQL Database then executes the generated query and returns the result back to Gemini.
+6. Finally, Gemini sends the response back to the user through the same text editor where they
+originally typed their query.
+
+Challenges:
+- Accurate language modeling - LLMS should be able to understand various languages and dialects
+- Ambiguity handling - If the sentence has multiple possible interpretations, how do we handle
+them?
+- Complex queries - For complex queries involving joins, aggregation functions etc., how do we generate
+SQL code that accurately represents them?
+- Error Handling - What if the SQL syntax is incorrect or the logic behind the query is flawulous? 
+How do we communicate errors to the users?</s>
+
