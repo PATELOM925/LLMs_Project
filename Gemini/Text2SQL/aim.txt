@@ -23,4 +23,4 @@ them?
 SQL code that accurately represents them?
 - Error Handling - What if the SQL syntax is incorrect or the logic behind the query is flawulous? 
 How do we communicate errors to the users?</s>
-
+ 
