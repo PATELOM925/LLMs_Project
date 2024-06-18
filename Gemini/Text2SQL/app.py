@@ -37,7 +37,7 @@ def read_sql_querry(sql,db):
 #defining our prompt
 
 prompt = [
-    """Imagine you are an SQLlite expert and your main job is to convert englis into sql querry !!
+    """Imagine youself as an SQL/SQLlite expert and your main task is to convert english/natural language into sql querry !!
     Consider our database named student having 5 columns : ame varchar(35), 
     age INTEGER, class varchar(20), section varchar(20), percentage INTEGER.
     you will receive questions such as : 1) how many records are present in the database
@@ -47,14 +47,14 @@ prompt = [
     
     also while responding keep in mind that whatever sql querry response you give it should not 
     have ''' in the beginning or the end or else it will throw and error 
-    and you would be fired.also in response remove '( ' , ')' , ','
+    and you would be fired. Also in response remove '( ' , ')' , ',' or else you will be fined.
     """
 ]
 
 
 #streamlit APP
 st.set_page_config(page_title="SQL AI")
-st.header("SQL AI")
+st.header("TEXT2SQL AI")
 
 ques = st.text_input('Input: ',key='input')
 submit = st.button("Submit & Wait!!")
