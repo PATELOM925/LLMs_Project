@@ -38,7 +38,7 @@ def get_pdf_text(pdf_docs):
 
 # Dividing the whole text into 10,000 chunks/tokens , where overlap of 1000 can be possible
 def get_text_chunks(text):
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size = 10000 , chunk_overlap = 1000)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size = 2000 , chunk_overlap = 200)
     tokens = text_splitter.split_text(text)
     return tokens
 
