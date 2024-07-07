@@ -11,7 +11,7 @@ ai.configure(api_key=os.getenv('key'))
 
 #function to load google gemini model
 #fucntion to provide sql querry as response
-
+ 
 def gemini_response(ques,prompt):
     model = ai.GenerativeModel('gemini-pro')
     response = model.generate_content([prompt[0],ques])
