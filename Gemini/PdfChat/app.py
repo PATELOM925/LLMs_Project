@@ -1,7 +1,7 @@
 #important libraries wrt langchain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-#embedding technique / converting pdf to vectors
+#embedding technique / converting pdf to vectors 
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from google import generativeai as ai 
  
