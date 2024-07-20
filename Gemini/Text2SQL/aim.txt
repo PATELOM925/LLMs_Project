@@ -1,7 +1,7 @@
 Aim : to create Text to SQL application 
 
 How will it work ?
-prompt --> LLM --> gemini --> querry --> our sql database --> get response
+prompt --> LLM --> gemini --> querry --> User's SQL database --> get response
 1. User types in a query on the text editor of the app.
 2. The Language Modeling Module (LLM) takes this input and breaks down into meaningful
 sentences or phrases using NLP techniques like tokenization, POS tagging etc.
