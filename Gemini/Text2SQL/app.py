@@ -1,14 +1,14 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-import streamlit as st 
+import streamlit as st  
 import os
 import sqlite3
 import google.generativeai as ai
 
 #configuring API key
 ai.configure(api_key=os.getenv('key'))
-
+ 
 #function to load google gemini model
 #fucntion to provide sql querry as response
  
