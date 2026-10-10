@@ -24,7 +24,7 @@ import os
 #Main Code
 
 #configure API Key
-os.environ['GOOGLE_API_KEY'] = "AIzaSyBLpwLwUTsLeJDtH73pGCz5-PWoWKHJiDE"
+# Set GOOGLE_API_KEY in your environment before running this app.
 ai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
 #Read the PDf , Go through all pages, Extract the text

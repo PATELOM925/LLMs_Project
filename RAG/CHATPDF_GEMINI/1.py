@@ -1,6 +1,6 @@
 # from clarifai.rag import RAG
 
-# api_key = 'e752d79a10b441d29bd7cb10219f4d85'
+# api_key = os.environ['CLARIFAI_PAT']
 # user_id = "askompatel-1"
 
 # rag_agent = RAG.setup(user_id=user_id, lm_url="https://clarifai.com/gep/generate/models/gemini-1_5-flash", api_key=api_key)
@@ -28,11 +28,11 @@ from ipywidgets import FileUpload
 from IPython.display import display
 import os
 
-api_key = 'e752d79a10b441d29bd7cb10219f4d85'
+api_key = os.environ.get('CLARIFAI_PAT', '')
 user_id = "askompatel-1"
 
 if 'CLARIFAI_PAT' not in os.environ:
-    os.environ['CLARIFAI_PAT'] = 'e752d79a10b441d29bd7cb10219f4d85'
+    raise SystemExit('Set the CLARIFAI_PAT environment variable before running.')
 
 # Set up the RAG agent
 rag_agent = RAG.setup(user_id=user_id, lm_url="https://clarifai.com/gep/generate/models/gemini-1_5-flash", api_key=api_key)
